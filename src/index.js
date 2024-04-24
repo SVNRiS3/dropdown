@@ -1,3 +1,8 @@
-import './style.css';
+import "./style.css";
+import Dropdown from "./Dropdown";
 
-console.log('Hello, world!');
+const dropdownButton = document.querySelector(".dropdown-button");
+
+const dropdown = new Dropdown(dropdownButton);
+
+dropdown.init();
