@@ -1,14 +1,16 @@
 export default class Dropdown {
   defaultStyle = {};
 
-  constructor(dropdownButton) {
-    this.dropdownButton = dropdownButton;
-    this.itemList = dropdownButton.nextElementSibling;
+  constructor(dropdownButtonsClassName) {
+    this.dropdownButtons = document.querySelectorAll(dropdownButtonsClassName);
   }
 
   init() {
-    this.dropdownButton.addEventListener("click", () => {
-      this.itemList.classList.toggle("hidden");
+    this.dropdownButtons.forEach((dropdownButton) => {
+      this.itemList = dropdownButton.nextElementSibling;
+      dropdownButton.addEventListener("click", () => {
+        this.itemList.classList.toggle("hidden");
+      });
     });
   }
 }
