@@ -7,9 +7,9 @@ export default class Dropdown {
 
   init() {
     this.dropdownButtons.forEach((dropdownButton) => {
-      this.itemList = dropdownButton.nextElementSibling;
+      const itemList = dropdownButton.nextElementSibling;
       dropdownButton.addEventListener("click", () => {
-        this.itemList.classList.toggle("hidden");
+        itemList.classList.toggle("hidden");
       });
     });
   }

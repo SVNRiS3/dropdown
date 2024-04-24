@@ -21,6 +21,8 @@ body {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  position: absolute;
+  z-index: 999;
 }
 
 .dropdown-item {
