@@ -19,3 +19,13 @@ body {
 /* .hidden {
 	display: none;
 } */
+
+.dropdown-items {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+.dropdown-item {
+	padding: 5px 10px;
+}
